@@ -1,15 +1,19 @@
-import { View } from "react-native";
-import { Button, Text } from "react-native-paper";
-import styles from "../utils/styles";
+import * as React from 'react';
+import { TextInput } from 'react-native-paper';
+import { View } from 'react-native-web';
 
-export default function AboutScreen({ navigation }) {
-    return (
-        <View
-            style={styles.container}>
-            <Text>Sou a página de About</Text>
-            <Button mode="elevated" onPress={() => {navigation.navigate("HomeScreen") }}>Home</Button>
-            <Button mode="elevated" onPress={() => {navigation.navigate("ContatoScreen") }}>Contato</Button>
+const MyComponent = () => {
+  const [text, setText] = React.useState('');
 
-        </View>
-    )
-}
+  return (
+    <View>
+    <TextInput
+      label="Password"
+      secureTextEntry
+      right={<TextInput.Icon name="eye" />}
+    />
+    </View>
+  );
+};
+
+export default MyComponent;

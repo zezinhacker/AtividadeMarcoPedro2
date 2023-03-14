@@ -10,8 +10,7 @@ export default function HomeScreen({ navigation }) {
       <Text>Olá eu sou a Home Screen</Text>
       <Button mode="elevated"onPress={() => {navigation.navigate("AboutScreen");}}>
       <Button mode="elevated" onPress={() => {navigation.navigate("ContatoScreen") }}>Contato</Button>
-
-        Sobre
+      <Button mode="elevated" onPress={() => {navigation.navigate("LoginScreen") }}>Login</Button>
       </Button>
     </View>
 }
