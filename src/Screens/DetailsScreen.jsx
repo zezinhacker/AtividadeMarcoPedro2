@@ -1,12 +1,13 @@
-import { View } from "react-native";
 import { Button, Text } from "react-native-paper";
+import { View } from "react-native";
+import styles from "../utils/styles";
 
-export default function LoginScreen({ navigation }) {
+export default function DetailsScreen() {
   return (
     <View style={styles.container}>
-      <Text>Olá eu sou a Login Screen</Text>
+      <Text>Olá eu sou a Details Screen</Text>
       <Button
-        mode="elevated"
+        mode="contained"
         onPress={() => {
           navigation.navigate("HomeScreen");
         }}
