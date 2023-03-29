@@ -9,7 +9,7 @@ export default function SplashScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <ActivityIndicator animating={true} color="#000" size="medium" />
+      <ActivityIndicator animating={true} color="#000" />
       <Text>Calma ai Meu Consagrado</Text>
     </View>
   );
